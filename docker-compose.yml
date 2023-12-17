@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-      - "666:666"
+      - "99:99"
     environment:
       - NODE_ENV=production
     depends_on:
