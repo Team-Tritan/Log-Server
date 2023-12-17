@@ -12,7 +12,7 @@ const generateUniqueId = () => {
 
 (async () => {
   const app = await NestFactory.create(AppModule);
-  const appService = app.get(AppService); // Using appService directly instead of redisService
+  const appService = app.get(AppService); 
 
   const server = net.createServer((socket: net.Socket) => {
     const logId = generateUniqueId();
